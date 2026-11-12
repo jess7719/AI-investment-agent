@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}{{ report.company.ticker if report else 'Select company' }} · Company analysis{% endblock %}
+{% block body %}
+<link rel="stylesheet" href="/static/company.css">
+<div class="company-layout" data-explicit-selection="{{ 'true' if explicit_selection else 'false' }}">
+<button id="company-picker" class="secondary company-picker" aria-expanded="false" aria-controls="company-navigator">Choose company</button>
+<aside id="company-navigator" class="company-navigator" aria-label="Company navigator">
+<div class="navigator-controls"><div class="section-heading"><p class="eyebrow">EQUITY LENS</p><button id="company-picker-close" class="text-button" aria-label="Close company picker">Close</button></div>
+<h2>Companies</h2><label for="company-search" class="small">Search ticker or company</label><input id="company-search" type="search" placeholder="e.g. NVDA or Apple" autocomplete="off" maxlength="100">
+<label for="company-filter" class="sr-only">Company filter</label><select id="company-filter"><option value="all">All companies</option><option value="ready">Ready to analyse</option><option value="saved">Saved · this device</option></select>
+<p id="directory-counts" class="small muted">{{ directory.counts.directory }} directory · {{ directory.counts.analysed }} analysed · {{ directory.counts.template_supported }} template supported</p>
+<p id="directory-status" class="small" role="status">Local SEC directory · identity does not imply analysis coverage</p><button id="directory-retry" class="secondary" hidden>Retry directory</button></div>
+<div id="company-list-scroll" class="company-list-scroll"><nav id="company-list" aria-label="Select a company">{% for item in directory['items'] %}<a class="company-row" href="/company?security_id={{ item.security_id }}" data-security-id="{{ item.security_id }}" {% if item.security_id == security_id %}aria-current="true"{% endif %}><strong>{{ item.ticker }}</strong><span>{{ item.name }}</span><small>{{ item.exchange }} · {{ item.availability }}</small></a>{% endfor %}</nav><div id="company-list-sentinel"></div><button id="company-load-more" class="secondary">Load more companies</button></div>
+<p class="navigator-source small muted"><a href="{{ directory.source }}" target="_blank" rel="noopener noreferrer">SEC identity source ↗</a><br>Imported <span id="directory-date">{{ directory.imported_at[:10] }}</span></p>
+</aside>
+<main id="main" class="company-page company-research" data-security-id="{{ security_id }}" tabindex="-1">
+{% if report %}{% include "company_report.html" %}{% else %}<section class="empty-state"><h1>Company could not be resolved</h1><p>{{ resolution }}</p><p>Select an active company from the directory.</p></section>{% endif %}
+</main></div>
+<script type="module" src="/static/company.js"></script>
+{% endblock %}

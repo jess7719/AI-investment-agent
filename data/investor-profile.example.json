@@ -1,0 +1,14 @@
+{
+  "ticker": "SPCX",
+  "already_owns_stock": null,
+  "average_purchase_price": null,
+  "amount_invested": null,
+  "current_position_value": null,
+  "intended_additional_investment": null,
+  "intended_holding_period": null,
+  "risk_tolerance": null,
+  "maximum_acceptable_loss": null,
+  "maximum_portfolio_percentage": null,
+  "investment_objective": null,
+  "reason_for_investing": null
+}

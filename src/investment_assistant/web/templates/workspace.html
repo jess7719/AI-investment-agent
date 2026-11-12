@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="app-layout" data-page="workspace" data-ticker="{{ ticker or '' }}" data-depth="{{ shared.get('answers', {}).get('depth', 'Step by step') if shared.get('personalise') else 'Step by step' }}">
+<aside class="sidebar"><p class="eyebrow">YOUR WORKSPACE</p><h2>Find your next<br>question.</h2>
+<form id="search-form"><label for="search">Company name or ticker</label><div class="search-input"><input id="search" type="search" placeholder="Search investments…" autocomplete="off" maxlength="80"><button aria-label="Search" type="submit">↗</button></div></form>
+<div id="search-results" aria-live="polite"></div>
+<p class="eyebrow sidebar-label">RECENT INVESTMENTS</p><div class="investment-list">{% for symbol in recent %}<a href="/research/{{ symbol }}" {% if ticker == symbol %}aria-current="page"{% endif %}><span class="ticker-icon">{{ symbol[:1] }}</span><span>{{ symbol }}</span><span class="arrow">↗</span></a>{% else %}<p class="muted small">Investments you explore will appear here.</p>{% endfor %}</div>
+<div class="sidebar-bottom"><p class="eyebrow">A SMALL RESEARCH HABIT</p><p>Look at the evidence.<br>Ask what could change.<br>Write down your thinking.</p><a href="/profile">Adjust your learning preferences →</a></div></aside>
+<main id="main" class="workspace-main">
+{% if not ticker %}
+<p class="eyebrow">RESEARCH WITH PERSPECTIVE</p><h1>Understand more.<br>Decide thoughtfully.</h1><p class="lead">Choose an investment, explore the context, and build your own view.</p>
+<div class="journey"><span>01 &nbsp; Choose an investment</span><span>02 &nbsp; Explore the evidence</span><span>03 &nbsp; Keep your thinking</span></div>
+<div class="section-heading"><h2>A place to begin</h2><span class="muted small">Examples for exploration</span></div>
+<div class="preset-grid">{% for symbol, name, kind in catalog %}<a class="investment-card" href="/research/{{ symbol }}"><div class="card-top"><span class="ticker-icon">{{ symbol[:1] }}</span><span class="arrow">↗</span></div><h3>{{ name }}</h3><p>{{ symbol }} <span>· {{ kind }}</span></p></a>{% endfor %}</div>
+<section class="learning-banner"><span class="learning-symbol" aria-hidden="true">↗</span><div><p class="eyebrow">CURIOSITY BEFORE CONCLUSIONS</p><h2>A price chart is a starting point.</h2><p>Pair it with business or product context, look for alternative explanations, and note what remains uncertain.</p></div></section>
+{% else %}
+<div class="breadcrumb">WORKSPACE <span>/</span> {{ ticker }}</div><div class="investment-heading"><div><p class="eyebrow">INVESTMENT EXPLORER</p><h1>{{ display_name|default(asset.name) }}</h1><p class="muted">{{ ticker }} <span>· Daily market context and evidence-led research</span></p></div><a class="secondary button-link" href="/profile?ticker={{ ticker }}">Investment profile ↗</a></div>
+<nav class="tabs" aria-label="Investment views">{% for key, label in [('overview','Overview'),('report','Report'),('evidence','Evidence'),('history','History')] %}<a href="/research/{{ ticker }}?tab={{ key }}" {% if tab == key %}aria-current="page"{% endif %}>{{ label }}</a>{% endfor %}</nav>
+{% if tab == 'overview' %}
+{% include 'market_context.html' %}
+{% include 'outlook.html' %}
+<div class="section-heading"><div><h2>The market picture</h2><p class="muted small">A little context before the headlines.</p></div><div class="range-buttons" role="group" aria-label="Chart time range">{% for range in ['1M','3M','1Y'] %}<button type="button" class="range secondary" data-range="{{ range }}" aria-pressed="{{ 'true' if loop.first else 'false' }}">{{ range }}</button>{% endfor %}</div></div>
+<div id="chart-status" role="status">Loading daily market data…</div><div id="charts"></div>
+<details class="panel"><summary>Explore financial or product context</summary><p class="muted small">Company comparisons use a configured peer where supported. Commodity investments use product structure and underlying-market context.</p><button type="button" class="secondary" id="financial-load">Load context</button><div id="financial-context" aria-live="polite"></div></details>
+<section class="next-step"><div><p class="eyebrow">GO ONE LEVEL DEEPER</p><h2>What is behind the movement?</h2><p>Choose a report to connect the market picture with evidence, risks, and useful questions.</p></div><a class="button-link" href="/research/{{ ticker }}?tab=report">Choose a report →</a></section>
+{% elif tab == 'report' %}
+<p class="eyebrow">MAKE THE RESEARCH USEFUL</p><h2>Choose your report.</h2><p class="muted">Prepare the evidence first, then review the context before generating analysis.</p>
+<form id="prepare-form"><fieldset class="report-presets"><legend class="sr-only">Report type</legend>{% for key,label in presets.items() %}<label class="report-preset"><input type="radio" name="preset" value="{{ key }}" {% if loop.first %}checked{% endif %}><strong>{{ label }}</strong><span>{{ {'beginner':'The essential context, explained step by step.', 'news':'Recent developments and why they might matter.', 'deep':'A fuller view of evidence, scenarios and open questions.'}[key] }}</span></label>{% endfor %}</fieldset>
+<div class="panel form-grid"><label>Time-horizon emphasis<select name="horizon">{% for horizon in horizons %}<option>{{ horizon }}</option>{% endfor %}</select></label><label>Explanation depth<select name="depth">{% for depth in ['Step by step','Balanced','Concise'] %}<option {% if shared.get('personalise') and shared.get('answers',{}).get('depth') == depth %}selected{% endif %}>{{ depth }}</option>{% endfor %}</select></label><fieldset class="full-width"><legend>Optional sections</legend><div class="inline-choices">{% for section in sections %}<label><input type="checkbox" name="sections" value="{{ section }}" checked> {{ section }}</label>{% endfor %}</div></fieldset><p class="full-width muted small">Evidence, risks and limitations always remain visible. Horizon defaults to your investment profile, then your shared profile.</p></div>
+<button type="submit">Prepare evidence →</button><span class="action-hint">No paid AI request at this step</span><p id="prepare-status" role="status"></p></form>
+<details class="panel"><summary>Personal context and selected notes</summary><p>Only notes explicitly selected for future analysis are included.</p><pre>{{ context|tojson(indent=2) }}</pre></details>
+{% elif tab == 'evidence' %}
+<div class="section-heading"><div><p class="eyebrow">CHECK BEFORE YOU GENERATE</p><h2>Your evidence, in view.</h2></div><a href="/research/{{ ticker }}?tab=report" class="secondary button-link">Prepare again</a></div>
+{% if preparation %}
+<div class="status-banner {% if stale %}warning{% endif %}" role="status">{% if stale %}Outdated — your profile, included notes, or research date changed. Prepare evidence again before generating.{% elif current_job %}Generation {{ current_job.status }}. {{ current_job.message }}{% else %}Prepared and ready for review. No paid request has been made for this preparation.{% endif %}</div>
+<div class="metadata-row"><span>Prepared {{ preparation.created_at }}</span><span>{{ presets[preparation.preferences.preset] }}</span><span>~{{ preparation.approximate_tokens }} input tokens, plus instructions</span></div>
+<section class="panel"><h3>Personal context that will be sent</h3><p>Review the shared answers, effective investment profile and selected commentary below. To change these, edit Profile or your report notes, then prepare again.</p><pre>{{ preparation.context|tojson(indent=2) }}</pre></section>
+<details class="panel"><summary>Source evidence and limitations</summary><pre>{{ preparation.evidence|tojson(indent=2) }}</pre></details>
+{% if not current_job %}<form id="generate-form" data-preparation="{{ preparation.id }}"><label class="consent"><input type="checkbox" name="confirm_paid" required {% if stale %}disabled{% endif %}> I reviewed the context above and want to make a paid AI request using {{ preparation.model }}.</label><p class="muted small">API charges depend on model and token usage. A generated report may be rejected by validation; the response is retained for recovery.</p><button type="submit" {% if stale %}disabled{% endif %}>Generate {{ presets[preparation.preferences.preset] }} →</button></form>{% endif %}<div id="job-status" class="panel" role="status" {% if current_job %}data-job="{{ current_job.id }}"{% else %}hidden{% endif %}>{% if current_job %}{{ current_job.message }}{% if current_job.report_id %} <a href="/reports/{{ current_job.report_id }}">Open saved report →</a>{% endif %}{% endif %}</div>
+{% else %}<section class="empty-state"><h3>Start with a report type.</h3><p>Prepare the evidence to review sources and personal context here.</p><a href="/research/{{ ticker }}?tab=report">Choose a report →</a></section>{% endif %}
+{% elif tab == 'history' %}
+<h2>Your research trail</h2><p class="muted">Saved report versions and generation jobs for {{ ticker }}.</p>
+{% for report in reports %}<a class="history-row" href="/reports/{{ report.id }}"><div><strong>{{ report.title }}</strong><p>{{ report.created_at }} · {{ report.source }}</p></div><span>Read report ↗</span></a>{% else %}<p>No saved reports yet.</p>{% endfor %}
+{% for job in jobs %}<div class="panel"><strong>{{ job.status|title }}</strong><p>{{ job.created_at }} · {{ job.message }}</p>{% if job.report_id %}<a href="/reports/{{ job.report_id }}">Open report →</a>{% endif %}</div>{% endfor %}
+{% endif %}
+{% endif %}
+</main></div>
+{% endblock %}

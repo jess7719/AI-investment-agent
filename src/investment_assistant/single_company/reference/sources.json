@@ -1,0 +1,8 @@
+{
+  "source_url": "https://www.sec.gov/files/company_tickers_exchange.json",
+  "retrieved_date": "2026-11-06",
+  "sha256": "224330f2c44f5d173395e427dbac3c6981acdb1f57e3658832d315c3e96f6522",
+  "raw_rows": 10409,
+  "listed_candidates": 7625,
+  "limitations": "SEC candidate identities only; no automatic instrument, sector, template or account entitlement assertions."
+}

@@ -1,0 +1,364 @@
+{
+  "analogue_date": "2026-03-03",
+  "current_as_of": "2026-11-02",
+  "similarity_score": 89.84977253230464,
+  "ticker": "SPCX",
+  "benchmark": "SPY",
+  "benchmark_label": "S&P 500 (SPY price proxy)",
+  "mode": "market_regime_only",
+  "scope_notice": "This is a historical US-market case, not a historical SPCX case.",
+  "regime": {
+    "equity_trend": "downtrend",
+    "volatility": "normal",
+    "rates": "falling",
+    "monetary_policy": "unknown",
+    "inflation": "unknown",
+    "growth": "unknown",
+    "risk_sentiment": "risk_off"
+  },
+  "context_before_date": {
+    "analogue_date": "2026-03-03",
+    "market": "US",
+    "evidence_version": "historical-context-v1",
+    "window_days": 7,
+    "main_events": [
+      {
+        "event_date": "2026-02-27",
+        "category": "inflation",
+        "source_ref": "bls-20260227",
+        "affected_markets": [
+          "US producers",
+          "US Treasuries"
+        ],
+        "evidence": {
+          "kind": "FACT",
+          "text": "US producer prices rose 0.5% in January and 2.9% over the preceding year. The release showed that price pressure remained relevant when investors assessed the interest-rate outlook.",
+          "evidence_refs": [
+            "bls-20260227"
+          ]
+        },
+        "known_by_analogue_date": true,
+        "possible_market_mechanism": {
+          "kind": "INTERPRETATION",
+          "category": "inflation",
+          "steps": [
+            "New price data",
+            "investors reassess inflation",
+            "expected central-bank rates change",
+            "bond yields and equity valuations may adjust"
+          ],
+          "explanation": "Possible explanation: Price releases influence expectations for central-bank interest rates. Persistent inflation can keep borrowing costs high; cooling inflation can ease that pressure. A price release alone does not establish why the whole market moved.",
+          "evidence_refs": [
+            "bls-20260227"
+          ],
+          "certainty": "possible",
+          "scenario": null
+        }
+      },
+      {
+        "event_date": "2026-03-03",
+        "category": "geopolitics",
+        "source_ref": "ap-20260303",
+        "affected_markets": [
+          "Iran",
+          "oil",
+          "US equities",
+          "US Treasuries"
+        ],
+        "evidence": {
+          "kind": "FACT",
+          "text": "The widening war with Iran pushed oil prices higher and shares lower. Treasury yields rose amid inflation concerns, illustrating pressure on stocks and bonds at the same time.",
+          "evidence_refs": [
+            "ap-20260303"
+          ]
+        },
+        "known_by_analogue_date": true,
+        "possible_market_mechanism": {
+          "kind": "INTERPRETATION",
+          "category": "geopolitics",
+          "steps": [
+            "Conflict threatens energy supplies",
+            "oil prices rise",
+            "inflation concerns increase",
+            "investors may demand higher bond yields",
+            "cost pressures can weigh on shares"
+          ],
+          "explanation": "Possible explanation: Threats to energy supplies can lift oil prices and business costs. Investors may then demand higher bond yields to compensate for inflation, while companies face pressure on profits. Stocks and bonds can both lose value.",
+          "evidence_refs": [
+            "ap-20260303"
+          ],
+          "certainty": "possible",
+          "scenario": "energy_inflation"
+        }
+      }
+    ],
+    "event_clusters": [
+      {
+        "category": "inflation",
+        "title": "Inflation and price pressure",
+        "facts": [
+          {
+            "kind": "FACT",
+            "text": "US producer prices rose 0.5% in January and 2.9% over the preceding year. The release showed that price pressure remained relevant when investors assessed the interest-rate outlook.",
+            "evidence_refs": [
+              "bls-20260227"
+            ]
+          }
+        ],
+        "evidence_refs": [
+          "bls-20260227"
+        ],
+        "interpretation": {
+          "kind": "INTERPRETATION",
+          "category": "inflation",
+          "steps": [
+            "New price data",
+            "investors reassess inflation",
+            "expected central-bank rates change",
+            "bond yields and equity valuations may adjust"
+          ],
+          "explanation": "Possible explanation: Price releases influence expectations for central-bank interest rates. Persistent inflation can keep borrowing costs high; cooling inflation can ease that pressure. A price release alone does not establish why the whole market moved.",
+          "evidence_refs": [
+            "bls-20260227"
+          ],
+          "certainty": "possible",
+          "scenario": null
+        }
+      },
+      {
+        "category": "geopolitics",
+        "title": "Conflict and global trade risks",
+        "facts": [
+          {
+            "kind": "FACT",
+            "text": "The widening war with Iran pushed oil prices higher and shares lower. Treasury yields rose amid inflation concerns, illustrating pressure on stocks and bonds at the same time.",
+            "evidence_refs": [
+              "ap-20260303"
+            ]
+          }
+        ],
+        "evidence_refs": [
+          "ap-20260303"
+        ],
+        "interpretation": {
+          "kind": "INTERPRETATION",
+          "category": "geopolitics",
+          "steps": [
+            "Conflict threatens energy supplies",
+            "oil prices rise",
+            "inflation concerns increase",
+            "investors may demand higher bond yields",
+            "cost pressures can weigh on shares"
+          ],
+          "explanation": "Possible explanation: Threats to energy supplies can lift oil prices and business costs. Investors may then demand higher bond yields to compensate for inflation, while companies face pressure on profits. Stocks and bonds can both lose value.",
+          "evidence_refs": [
+            "ap-20260303"
+          ],
+          "certainty": "possible",
+          "scenario": "energy_inflation"
+        }
+      }
+    ],
+    "evidence_refs": [
+      {
+        "reference": "bls-20260227",
+        "headline": "Producer Price Indexes — January 2026",
+        "publisher": "US Bureau of Labor Statistics",
+        "published_at": "2026-02-27T13:30:00Z",
+        "url": "https://www.bls.gov/news.release/archives/ppi_02272026.htm",
+        "summary": "US producer prices rose 0.5% in January and 2.9% over the preceding year. The release showed that price pressure remained relevant when investors assessed the interest-rate outlook.",
+        "source_classification": "official_data",
+        "entities": [
+          "US producers",
+          "US Treasuries"
+        ],
+        "category": "inflation",
+        "reviewed_summary": true,
+        "publication_precision": "timestamp",
+        "mechanism_scenario": null
+      },
+      {
+        "reference": "ap-20260303",
+        "headline": "Dow drops 400 after trimming an early plunge of 1,200 as oil prices climb even higher",
+        "publisher": "Associated Press",
+        "published_at": "2026-03-03T23:59:59Z",
+        "url": "https://apnews.com/article/75edbda5b8fa3038b47f143cc16855f0",
+        "summary": "The widening war with Iran pushed oil prices higher and shares lower. Treasury yields rose amid inflation concerns, illustrating pressure on stocks and bonds at the same time.",
+        "source_classification": "wire",
+        "entities": [
+          "Iran",
+          "oil",
+          "US equities",
+          "US Treasuries"
+        ],
+        "category": "geopolitics",
+        "reviewed_summary": true,
+        "publication_precision": "date",
+        "mechanism_scenario": "energy_inflation"
+      }
+    ],
+    "retrieval_status": "reviewed public metadata only; historical archive coverage is partial",
+    "evidence_quality": "reviewed summaries with linked public metadata",
+    "evidence_completeness": "partial",
+    "source_count": 2
+  },
+  "macro_conditions": [
+    {
+      "kind": "FACT",
+      "text": "Broad equities were in a downtrend.",
+      "evidence_refs": []
+    },
+    {
+      "kind": "FACT",
+      "text": "Treasury yields were falling.",
+      "evidence_refs": []
+    },
+    {
+      "kind": "FACT",
+      "text": "Investors were reducing exposure to risky assets.",
+      "evidence_refs": []
+    },
+    {
+      "kind": "FACT",
+      "text": "Market price swings were within their usual range.",
+      "evidence_refs": []
+    }
+  ],
+  "market_mechanisms": [
+    {
+      "kind": "INTERPRETATION",
+      "category": "inflation",
+      "steps": [
+        "New price data",
+        "investors reassess inflation",
+        "expected central-bank rates change",
+        "bond yields and equity valuations may adjust"
+      ],
+      "explanation": "Possible explanation: Price releases influence expectations for central-bank interest rates. Persistent inflation can keep borrowing costs high; cooling inflation can ease that pressure. A price release alone does not establish why the whole market moved.",
+      "evidence_refs": [
+        "bls-20260227"
+      ],
+      "certainty": "possible",
+      "scenario": null
+    },
+    {
+      "kind": "INTERPRETATION",
+      "category": "geopolitics",
+      "steps": [
+        "Conflict threatens energy supplies",
+        "oil prices rise",
+        "inflation concerns increase",
+        "investors may demand higher bond yields",
+        "cost pressures can weigh on shares"
+      ],
+      "explanation": "Possible explanation: Threats to energy supplies can lift oil prices and business costs. Investors may then demand higher bond yields to compensate for inflation, while companies face pressure on profits. Stocks and bonds can both lose value.",
+      "evidence_refs": [
+        "ap-20260303"
+      ],
+      "certainty": "possible",
+      "scenario": "energy_inflation"
+    }
+  ],
+  "historical_outcomes": {
+    "20d": {
+      "kind": "HISTORICAL OUTCOME",
+      "trading_days": 20,
+      "start_date": "2026-03-03",
+      "end_date": "2026-03-31",
+      "asset_return": null,
+      "benchmark_return": -4.408153319863672,
+      "benchmark_excess_return": null,
+      "maximum_drawdown": null,
+      "benchmark_maximum_drawdown": -7.759116343004157,
+      "sufficient_asset_data": false,
+      "sufficient_benchmark_data": true
+    },
+    "60d": {
+      "kind": "HISTORICAL OUTCOME",
+      "trading_days": 60,
+      "start_date": "2026-03-03",
+      "end_date": "2026-05-28",
+      "asset_return": null,
+      "benchmark_return": 10.916754608857083,
+      "benchmark_excess_return": null,
+      "maximum_drawdown": null,
+      "benchmark_maximum_drawdown": -7.759116343004157,
+      "sufficient_asset_data": false,
+      "sufficient_benchmark_data": true
+    }
+  },
+  "similarities_to_today": [
+    {
+      "kind": "COMPARISON",
+      "text": "Broad equities are in a downtrend in both snapshots.",
+      "evidence_refs": []
+    },
+    {
+      "kind": "COMPARISON",
+      "text": "Treasury yields are falling in both snapshots.",
+      "evidence_refs": []
+    },
+    {
+      "kind": "COMPARISON",
+      "text": "Investors are reducing exposure to risky assets in both snapshots.",
+      "evidence_refs": []
+    }
+  ],
+  "internal_differences_from_today": [],
+  "lessons": [
+    {
+      "kind": "LESSON",
+      "text": "Inflation news affects both purchasing power and expected interest rates. A single price report does not determine the direction of the stock market.",
+      "evidence_refs": [
+        "bls-20260227"
+      ]
+    },
+    {
+      "kind": "LESSON",
+      "text": "Government bonds do not always offset stock losses. An energy-driven inflation scare can push bond yields up while shares fall.",
+      "evidence_refs": [
+        "ap-20260303"
+      ]
+    }
+  ],
+  "evidence_refs": [
+    {
+      "reference": "bls-20260227",
+      "headline": "Producer Price Indexes — January 2026",
+      "publisher": "US Bureau of Labor Statistics",
+      "published_at": "2026-02-27T13:30:00Z",
+      "url": "https://www.bls.gov/news.release/archives/ppi_02272026.htm",
+      "summary": "US producer prices rose 0.5% in January and 2.9% over the preceding year. The release showed that price pressure remained relevant when investors assessed the interest-rate outlook.",
+      "source_classification": "official_data",
+      "entities": [
+        "US producers",
+        "US Treasuries"
+      ],
+      "category": "inflation",
+      "reviewed_summary": true,
+      "publication_precision": "timestamp",
+      "mechanism_scenario": null
+    },
+    {
+      "reference": "ap-20260303",
+      "headline": "Dow drops 400 after trimming an early plunge of 1,200 as oil prices climb even higher",
+      "publisher": "Associated Press",
+      "published_at": "2026-03-03T23:59:59Z",
+      "url": "https://apnews.com/article/75edbda5b8fa3038b47f143cc16855f0",
+      "summary": "The widening war with Iran pushed oil prices higher and shares lower. Treasury yields rose amid inflation concerns, illustrating pressure on stocks and bonds at the same time.",
+      "source_classification": "wire",
+      "entities": [
+        "Iran",
+        "oil",
+        "US equities",
+        "US Treasuries"
+      ],
+      "category": "geopolitics",
+      "reviewed_summary": true,
+      "publication_precision": "date",
+      "mechanism_scenario": "energy_inflation"
+    }
+  ],
+  "notice": "This is historical context, not a forecast.",
+  "current_evidence_refs": []
+}

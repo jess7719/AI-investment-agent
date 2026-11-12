@@ -1,0 +1,477 @@
+{
+  "analogue_date": "2025-04-02",
+  "current_as_of": "2026-11-02",
+  "similarity_score": 86.86337960453152,
+  "ticker": "SPCX",
+  "benchmark": "SPY",
+  "benchmark_label": "S&P 500 (SPY price proxy)",
+  "mode": "market_regime_only",
+  "scope_notice": "This is a historical US-market case, not a historical SPCX case.",
+  "regime": {
+    "equity_trend": "downtrend",
+    "volatility": "normal",
+    "rates": "falling",
+    "monetary_policy": "unknown",
+    "inflation": "unknown",
+    "growth": "unknown",
+    "risk_sentiment": "risk_off"
+  },
+  "context_before_date": {
+    "analogue_date": "2025-04-02",
+    "market": "US",
+    "evidence_version": "historical-context-v1",
+    "window_days": 7,
+    "main_events": [
+      {
+        "event_date": "2025-03-26",
+        "category": "tariffs_trade",
+        "source_ref": "wh-20250326",
+        "affected_markets": [
+          "US automakers",
+          "US consumers"
+        ],
+        "evidence": {
+          "kind": "FACT",
+          "text": "The administration announced a 25% tariff on imported cars and certain parts. The car tariff was scheduled to begin on 3 April; businesses with international supply chains faced a change in future import costs.",
+          "evidence_refs": [
+            "wh-20250326"
+          ]
+        },
+        "known_by_analogue_date": true,
+        "possible_market_mechanism": {
+          "kind": "INTERPRETATION",
+          "category": "tariffs_trade",
+          "steps": [
+            "Trade-policy changes",
+            "uncertain import costs and supply chains",
+            "less predictable business profits and growth",
+            "investors reassess equity risk"
+          ],
+          "explanation": "Possible explanation: Tariffs can raise import costs and make future profits harder to predict. Businesses may delay investment while investors reassess growth and equity risk. Demand for safer bonds may rise, although inflation concerns can pull yields the other way.",
+          "evidence_refs": [
+            "wh-20250326"
+          ],
+          "certainty": "possible",
+          "scenario": null
+        }
+      },
+      {
+        "event_date": "2025-03-27",
+        "category": "economic_growth",
+        "source_ref": "bea-20250327",
+        "affected_markets": [
+          "US economy",
+          "US consumers"
+        ],
+        "evidence": {
+          "kind": "FACT",
+          "text": "The published estimate put fourth-quarter real GDP growth at a 2.4% annual rate, slower than the third quarter. It described a still-expanding economy before the coming trade-policy changes.",
+          "evidence_refs": [
+            "bea-20250327"
+          ]
+        },
+        "known_by_analogue_date": true,
+        "possible_market_mechanism": {
+          "kind": "INTERPRETATION",
+          "category": "economic_growth",
+          "steps": [
+            "Economic output still expanding",
+            "support for company sales and earnings",
+            "less urgency for interest-rate cuts",
+            "growth support can compete with valuation pressure"
+          ],
+          "explanation": "Possible explanation: An expanding economy can support company sales. At the same time, resilient growth can reduce the urgency for rate cuts, so the effect on shares depends on the balance between earnings support and borrowing costs.",
+          "evidence_refs": [
+            "bea-20250327"
+          ],
+          "certainty": "possible",
+          "scenario": "growth_expansion"
+        }
+      },
+      {
+        "event_date": "2025-03-28",
+        "category": "inflation",
+        "source_ref": "bea-20250328",
+        "affected_markets": [
+          "US consumers",
+          "US Treasuries"
+        ],
+        "evidence": {
+          "kind": "FACT",
+          "text": "February PCE prices rose 0.3% over the month; excluding food and energy, prices rose 0.4% and were 2.8% above a year earlier. Investors had to weigh continuing inflation pressure alongside growth and trade-policy risks.",
+          "evidence_refs": [
+            "bea-20250328"
+          ]
+        },
+        "known_by_analogue_date": true,
+        "possible_market_mechanism": {
+          "kind": "INTERPRETATION",
+          "category": "inflation",
+          "steps": [
+            "New price data",
+            "investors reassess inflation",
+            "expected central-bank rates change",
+            "bond yields and equity valuations may adjust"
+          ],
+          "explanation": "Possible explanation: Price releases influence expectations for central-bank interest rates. Persistent inflation can keep borrowing costs high; cooling inflation can ease that pressure. A price release alone does not establish why the whole market moved.",
+          "evidence_refs": [
+            "bea-20250328"
+          ],
+          "certainty": "possible",
+          "scenario": null
+        }
+      }
+    ],
+    "event_clusters": [
+      {
+        "category": "tariffs_trade",
+        "title": "Tariffs and trade policy",
+        "facts": [
+          {
+            "kind": "FACT",
+            "text": "The administration announced a 25% tariff on imported cars and certain parts. The car tariff was scheduled to begin on 3 April; businesses with international supply chains faced a change in future import costs.",
+            "evidence_refs": [
+              "wh-20250326"
+            ]
+          }
+        ],
+        "evidence_refs": [
+          "wh-20250326"
+        ],
+        "interpretation": {
+          "kind": "INTERPRETATION",
+          "category": "tariffs_trade",
+          "steps": [
+            "Trade-policy changes",
+            "uncertain import costs and supply chains",
+            "less predictable business profits and growth",
+            "investors reassess equity risk"
+          ],
+          "explanation": "Possible explanation: Tariffs can raise import costs and make future profits harder to predict. Businesses may delay investment while investors reassess growth and equity risk. Demand for safer bonds may rise, although inflation concerns can pull yields the other way.",
+          "evidence_refs": [
+            "wh-20250326"
+          ],
+          "certainty": "possible",
+          "scenario": null
+        }
+      },
+      {
+        "category": "economic_growth",
+        "title": "Growth and consumer spending",
+        "facts": [
+          {
+            "kind": "FACT",
+            "text": "The published estimate put fourth-quarter real GDP growth at a 2.4% annual rate, slower than the third quarter. It described a still-expanding economy before the coming trade-policy changes.",
+            "evidence_refs": [
+              "bea-20250327"
+            ]
+          }
+        ],
+        "evidence_refs": [
+          "bea-20250327"
+        ],
+        "interpretation": {
+          "kind": "INTERPRETATION",
+          "category": "economic_growth",
+          "steps": [
+            "Economic output still expanding",
+            "support for company sales and earnings",
+            "less urgency for interest-rate cuts",
+            "growth support can compete with valuation pressure"
+          ],
+          "explanation": "Possible explanation: An expanding economy can support company sales. At the same time, resilient growth can reduce the urgency for rate cuts, so the effect on shares depends on the balance between earnings support and borrowing costs.",
+          "evidence_refs": [
+            "bea-20250327"
+          ],
+          "certainty": "possible",
+          "scenario": "growth_expansion"
+        }
+      },
+      {
+        "category": "inflation",
+        "title": "Inflation and price pressure",
+        "facts": [
+          {
+            "kind": "FACT",
+            "text": "February PCE prices rose 0.3% over the month; excluding food and energy, prices rose 0.4% and were 2.8% above a year earlier. Investors had to weigh continuing inflation pressure alongside growth and trade-policy risks.",
+            "evidence_refs": [
+              "bea-20250328"
+            ]
+          }
+        ],
+        "evidence_refs": [
+          "bea-20250328"
+        ],
+        "interpretation": {
+          "kind": "INTERPRETATION",
+          "category": "inflation",
+          "steps": [
+            "New price data",
+            "investors reassess inflation",
+            "expected central-bank rates change",
+            "bond yields and equity valuations may adjust"
+          ],
+          "explanation": "Possible explanation: Price releases influence expectations for central-bank interest rates. Persistent inflation can keep borrowing costs high; cooling inflation can ease that pressure. A price release alone does not establish why the whole market moved.",
+          "evidence_refs": [
+            "bea-20250328"
+          ],
+          "certainty": "possible",
+          "scenario": null
+        }
+      }
+    ],
+    "evidence_refs": [
+      {
+        "reference": "wh-20250326",
+        "headline": "Adjusting Imports of Automobiles and Automobile Parts into the United States",
+        "publisher": "White House",
+        "published_at": "2025-03-26T23:59:59Z",
+        "url": "https://www.whitehouse.gov/presidential-actions/2025/03/adjusting-imports-of-automobiles-and-autombile-parts-into-the-united-states/",
+        "summary": "The administration announced a 25% tariff on imported cars and certain parts. The car tariff was scheduled to begin on 3 April; businesses with international supply chains faced a change in future import costs.",
+        "source_classification": "official_policy",
+        "entities": [
+          "US automakers",
+          "US consumers"
+        ],
+        "category": "tariffs_trade",
+        "reviewed_summary": true,
+        "publication_precision": "date",
+        "mechanism_scenario": null
+      },
+      {
+        "reference": "bea-20250327",
+        "headline": "Gross Domestic Product, Fourth Quarter 2024 — Third Estimate",
+        "publisher": "US Bureau of Economic Analysis",
+        "published_at": "2025-03-27T12:30:00Z",
+        "url": "https://www.bea.gov/news/2025/gross-domestic-product-4th-quarter-and-year-2024-third-estimate-gdp-industry-and",
+        "summary": "The published estimate put fourth-quarter real GDP growth at a 2.4% annual rate, slower than the third quarter. It described a still-expanding economy before the coming trade-policy changes.",
+        "source_classification": "official_data",
+        "entities": [
+          "US economy",
+          "US consumers"
+        ],
+        "category": "economic_growth",
+        "reviewed_summary": true,
+        "publication_precision": "timestamp",
+        "mechanism_scenario": "growth_expansion"
+      },
+      {
+        "reference": "bea-20250328",
+        "headline": "Personal Income and Outlays, February 2025",
+        "publisher": "US Bureau of Economic Analysis",
+        "published_at": "2025-03-28T12:30:00Z",
+        "url": "https://www.bea.gov/news/2025/personal-income-and-outlays-february-2025",
+        "summary": "February PCE prices rose 0.3% over the month; excluding food and energy, prices rose 0.4% and were 2.8% above a year earlier. Investors had to weigh continuing inflation pressure alongside growth and trade-policy risks.",
+        "source_classification": "official_data",
+        "entities": [
+          "US consumers",
+          "US Treasuries"
+        ],
+        "category": "inflation",
+        "reviewed_summary": true,
+        "publication_precision": "timestamp",
+        "mechanism_scenario": null
+      }
+    ],
+    "retrieval_status": "reviewed public metadata only; historical archive coverage is partial",
+    "evidence_quality": "reviewed summaries with linked public metadata",
+    "evidence_completeness": "partial",
+    "source_count": 3
+  },
+  "macro_conditions": [
+    {
+      "kind": "FACT",
+      "text": "Broad equities were in a downtrend.",
+      "evidence_refs": []
+    },
+    {
+      "kind": "FACT",
+      "text": "Treasury yields were falling.",
+      "evidence_refs": []
+    },
+    {
+      "kind": "FACT",
+      "text": "Investors were reducing exposure to risky assets.",
+      "evidence_refs": []
+    },
+    {
+      "kind": "FACT",
+      "text": "Market price swings were within their usual range.",
+      "evidence_refs": []
+    }
+  ],
+  "market_mechanisms": [
+    {
+      "kind": "INTERPRETATION",
+      "category": "tariffs_trade",
+      "steps": [
+        "Trade-policy changes",
+        "uncertain import costs and supply chains",
+        "less predictable business profits and growth",
+        "investors reassess equity risk"
+      ],
+      "explanation": "Possible explanation: Tariffs can raise import costs and make future profits harder to predict. Businesses may delay investment while investors reassess growth and equity risk. Demand for safer bonds may rise, although inflation concerns can pull yields the other way.",
+      "evidence_refs": [
+        "wh-20250326"
+      ],
+      "certainty": "possible",
+      "scenario": null
+    },
+    {
+      "kind": "INTERPRETATION",
+      "category": "economic_growth",
+      "steps": [
+        "Economic output still expanding",
+        "support for company sales and earnings",
+        "less urgency for interest-rate cuts",
+        "growth support can compete with valuation pressure"
+      ],
+      "explanation": "Possible explanation: An expanding economy can support company sales. At the same time, resilient growth can reduce the urgency for rate cuts, so the effect on shares depends on the balance between earnings support and borrowing costs.",
+      "evidence_refs": [
+        "bea-20250327"
+      ],
+      "certainty": "possible",
+      "scenario": "growth_expansion"
+    },
+    {
+      "kind": "INTERPRETATION",
+      "category": "inflation",
+      "steps": [
+        "New price data",
+        "investors reassess inflation",
+        "expected central-bank rates change",
+        "bond yields and equity valuations may adjust"
+      ],
+      "explanation": "Possible explanation: Price releases influence expectations for central-bank interest rates. Persistent inflation can keep borrowing costs high; cooling inflation can ease that pressure. A price release alone does not establish why the whole market moved.",
+      "evidence_refs": [
+        "bea-20250328"
+      ],
+      "certainty": "possible",
+      "scenario": null
+    }
+  ],
+  "historical_outcomes": {
+    "20d": {
+      "kind": "HISTORICAL OUTCOME",
+      "trading_days": 20,
+      "start_date": "2025-04-02",
+      "end_date": "2025-05-01",
+      "asset_return": null,
+      "benchmark_return": -1.0717155492817931,
+      "benchmark_excess_return": null,
+      "maximum_drawdown": null,
+      "benchmark_maximum_drawdown": -12.052718449457112,
+      "sufficient_asset_data": false,
+      "sufficient_benchmark_data": true
+    },
+    "60d": {
+      "kind": "HISTORICAL OUTCOME",
+      "trading_days": 60,
+      "start_date": "2025-04-02",
+      "end_date": "2025-06-30",
+      "asset_return": null,
+      "benchmark_return": 9.446955680857894,
+      "benchmark_excess_return": null,
+      "maximum_drawdown": null,
+      "benchmark_maximum_drawdown": -12.052718449457112,
+      "sufficient_asset_data": false,
+      "sufficient_benchmark_data": true
+    }
+  },
+  "similarities_to_today": [
+    {
+      "kind": "COMPARISON",
+      "text": "Broad equities are in a downtrend in both snapshots.",
+      "evidence_refs": []
+    },
+    {
+      "kind": "COMPARISON",
+      "text": "Treasury yields are falling in both snapshots.",
+      "evidence_refs": []
+    },
+    {
+      "kind": "COMPARISON",
+      "text": "Investors are reducing exposure to risky assets in both snapshots.",
+      "evidence_refs": []
+    }
+  ],
+  "internal_differences_from_today": [],
+  "lessons": [
+    {
+      "kind": "LESSON",
+      "text": "A tariff can raise a company's costs before it changes reported profits. Policy uncertainty can therefore move share prices ahead of earnings.",
+      "evidence_refs": [
+        "wh-20250326"
+      ]
+    },
+    {
+      "kind": "LESSON",
+      "text": "An economy can still be growing while investors worry about what comes next. GDP describes an earlier period; new policy risks can change expectations before they appear in the growth figures.",
+      "evidence_refs": [
+        "bea-20250327"
+      ]
+    },
+    {
+      "kind": "LESSON",
+      "text": "Inflation news affects both purchasing power and expected interest rates. A single price report does not determine the direction of the stock market.",
+      "evidence_refs": [
+        "bea-20250328"
+      ]
+    }
+  ],
+  "evidence_refs": [
+    {
+      "reference": "wh-20250326",
+      "headline": "Adjusting Imports of Automobiles and Automobile Parts into the United States",
+      "publisher": "White House",
+      "published_at": "2025-03-26T23:59:59Z",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/03/adjusting-imports-of-automobiles-and-autombile-parts-into-the-united-states/",
+      "summary": "The administration announced a 25% tariff on imported cars and certain parts. The car tariff was scheduled to begin on 3 April; businesses with international supply chains faced a change in future import costs.",
+      "source_classification": "official_policy",
+      "entities": [
+        "US automakers",
+        "US consumers"
+      ],
+      "category": "tariffs_trade",
+      "reviewed_summary": true,
+      "publication_precision": "date",
+      "mechanism_scenario": null
+    },
+    {
+      "reference": "bea-20250327",
+      "headline": "Gross Domestic Product, Fourth Quarter 2024 — Third Estimate",
+      "publisher": "US Bureau of Economic Analysis",
+      "published_at": "2025-03-27T12:30:00Z",
+      "url": "https://www.bea.gov/news/2025/gross-domestic-product-4th-quarter-and-year-2024-third-estimate-gdp-industry-and",
+      "summary": "The published estimate put fourth-quarter real GDP growth at a 2.4% annual rate, slower than the third quarter. It described a still-expanding economy before the coming trade-policy changes.",
+      "source_classification": "official_data",
+      "entities": [
+        "US economy",
+        "US consumers"
+      ],
+      "category": "economic_growth",
+      "reviewed_summary": true,
+      "publication_precision": "timestamp",
+      "mechanism_scenario": "growth_expansion"
+    },
+    {
+      "reference": "bea-20250328",
+      "headline": "Personal Income and Outlays, February 2025",
+      "publisher": "US Bureau of Economic Analysis",
+      "published_at": "2025-03-28T12:30:00Z",
+      "url": "https://www.bea.gov/news/2025/personal-income-and-outlays-february-2025",
+      "summary": "February PCE prices rose 0.3% over the month; excluding food and energy, prices rose 0.4% and were 2.8% above a year earlier. Investors had to weigh continuing inflation pressure alongside growth and trade-policy risks.",
+      "source_classification": "official_data",
+      "entities": [
+        "US consumers",
+        "US Treasuries"
+      ],
+      "category": "inflation",
+      "reviewed_summary": true,
+      "publication_precision": "timestamp",
+      "mechanism_scenario": null
+    }
+  ],
+  "notice": "This is historical context, not a forecast.",
+  "current_evidence_refs": []
+}

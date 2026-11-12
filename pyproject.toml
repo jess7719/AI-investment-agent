@@ -1,0 +1,51 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "personal-investment-assistant"
+version = "0.1.0"
+description = "A learning-focused personal AI investment research assistant"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "openai>=2.0.0,<3.0.0",
+  "python-dotenv>=1.0.0,<2.0.0",
+  "trafilatura==2.1.0",
+  "yfinance==1.5.1",
+]
+
+[project.optional-dependencies]
+company = [
+  "exchange-calendars==4.13.2",
+  "numpy==2.2.6",
+  "pandas==3.0.3",
+  "httpx==0.28.1",
+  "tzdata==2026.3",
+]
+web = [
+  "fastapi>=0.115,<1.0",
+  "uvicorn>=0.30,<1.0",
+  "jinja2>=3.1,<4.0",
+  "markdown-it-py>=3.0,<5.0",
+  "bleach>=6.0,<7.0",
+]
+dev = [
+  "pytest>=8.0.0,<10.0.0",
+  "ruff>=0.9.0,<1.0.0",
+  "httpx>=0.27,<1.0",
+]
+
+[project.scripts]
+investment-assistant = "investment_assistant.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/investment_assistant"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

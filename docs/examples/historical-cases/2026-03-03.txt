@@ -1,0 +1,29 @@
+Historical Case — 03 March 2026
+Similarity to today: 89.8 / 100
+Comparison snapshot as of: 2026-11-02
+This is a historical US-market case, not a historical SPCX case.
+
+WHAT HAPPENED?
+US producer prices rose 0.5% in January and 2.9% over the preceding year. The release showed that price pressure remained relevant when investors assessed the interest-rate outlook.
+The widening war with Iran pushed oil prices higher and shares lower. Treasury yields rose amid inflation concerns, illustrating pressure on stocks and bonds at the same time.
+Broad equities were in a downtrend. Treasury yields were falling. Investors were reducing exposure to risky assets. Market price swings were within their usual range.
+
+WHAT IS SIMILAR TO TODAY?
+- Broad equities were in a downtrend in both periods.
+- Treasury yields were falling in both periods.
+- Investors were reducing exposure to risky assets in both periods.
+
+WHAT HAPPENED NEXT?
+S&P 500 (SPY price proxy) — 20 trading days: -4.41%
+Benchmark maximum drawdown: -7.76%; 2026-03-03 to 2026-03-31
+S&P 500 (SPY price proxy) — 60 trading days: +10.92%
+Benchmark maximum drawdown: -7.76%; 2026-03-03 to 2026-05-28
+Returns use closing prices, exclude dividends and are not total returns.
+
+Sources:
+[bls-20260227] US Bureau of Labor Statistics — Producer Price Indexes — January 2026 (2026-02-27T13:30:00+00:00)
+https://www.bls.gov/news.release/archives/ppi_02272026.htm
+[ap-20260303] Associated Press — Dow drops 400 after trimming an early plunge of 1,200 as oil prices climb even higher (2026-03-03)
+https://apnews.com/article/75edbda5b8fa3038b47f143cc16855f0
+
+Important: This is historical context, not a forecast.

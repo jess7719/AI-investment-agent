@@ -1,0 +1,32 @@
+Historical Case — 28 February 2025
+Similarity to today: 93.7 / 100
+Comparison snapshot as of: 2026-11-02
+This is a historical US-market case, not a historical SPCX case.
+
+WHAT HAPPENED?
+January consumer spending declined 0.2% in nominal terms while the PCE price index rose 0.3% over the month. This release gave investors both a spending signal and an inflation update.
+Shares weakened as concerns about tariffs and inflation weighed on consumers. Treasury yields also fell as demand for safer assets increased.
+Nvidia fell 8.5% after its results as enthusiasm for artificial-intelligence shares weakened. The 10-year Treasury yield edged higher that day, showing that daily bond moves differed within the broader window.
+Broad equities were in a downtrend. Treasury yields were falling. Investors were reducing exposure to risky assets. Market price swings were within their usual range.
+
+WHAT IS SIMILAR TO TODAY?
+- Broad equities were in a downtrend in both periods.
+- Treasury yields were falling in both periods.
+- Investors were reducing exposure to risky assets in both periods.
+
+WHAT HAPPENED NEXT?
+S&P 500 (SPY price proxy) — 20 trading days: -6.48%
+Benchmark maximum drawdown: -7.20%; 2025-02-28 to 2025-03-28
+S&P 500 (SPY price proxy) — 60 trading days: -0.51%
+Benchmark maximum drawdown: -16.44%; 2025-02-28 to 2025-05-27
+Returns use closing prices, exclude dividends and are not total returns.
+
+Sources:
+[bea-20250228] US Bureau of Economic Analysis — Personal Income and Outlays, January 2025 (2025-02-28T13:30:00+00:00)
+https://www.bea.gov/news/2025/personal-income-and-outlays-january-2025
+[ap-20250225] Associated Press — How major US stock indexes fared Tuesday, 2/25/2025 (2025-02-25)
+https://apnews.com/article/662baaa23f22ff6e74b8a35dd716e3bc
+[ap-20250227] Associated Press — Wall Street falls sharply as Nvidia tumbles 8.5% and AI mania falters (2025-02-27)
+https://apnews.com/article/91a42e60248e389f1650bd744e6d9a2e
+
+Important: This is historical context, not a forecast.

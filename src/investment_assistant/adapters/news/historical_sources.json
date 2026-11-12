@@ -1,0 +1,134 @@
+[
+  {
+    "reference": "bea-20250228",
+    "headline": "Personal Income and Outlays, January 2025",
+    "publisher": "US Bureau of Economic Analysis",
+    "published_at": "2025-02-28T13:30:00Z",
+    "url": "https://www.bea.gov/news/2025/personal-income-and-outlays-january-2025",
+    "summary": "January consumer spending declined 0.2% in nominal terms while the PCE price index rose 0.3% over the month. This release gave investors both a spending signal and an inflation update.",
+    "source_classification": "official_data",
+    "category": "economic_growth",
+    "entities": [
+      "US consumers",
+      "US Treasuries"
+    ],
+    "reviewed_summary": true,
+    "mechanism_scenario": "weak_spending"
+  },
+  {
+    "reference": "ap-20250225",
+    "headline": "How major US stock indexes fared Tuesday, 2/25/2025",
+    "publisher": "Associated Press",
+    "published_at": "2025-02-25T23:59:59Z",
+    "url": "https://apnews.com/article/662baaa23f22ff6e74b8a35dd716e3bc",
+    "summary": "Shares weakened as concerns about tariffs and inflation weighed on consumers. Treasury yields also fell as demand for safer assets increased.",
+    "source_classification": "wire",
+    "category": "tariffs_trade",
+    "entities": [
+      "US consumers",
+      "US equities",
+      "US Treasuries"
+    ],
+    "reviewed_summary": true,
+    "publication_precision": "date"
+  },
+  {
+    "reference": "ap-20250227",
+    "headline": "Wall Street falls sharply as Nvidia tumbles 8.5% and AI mania falters",
+    "publisher": "Associated Press",
+    "published_at": "2025-02-27T23:59:59Z",
+    "url": "https://apnews.com/article/91a42e60248e389f1650bd744e6d9a2e",
+    "summary": "Nvidia fell 8.5% after its results as enthusiasm for artificial-intelligence shares weakened. The 10-year Treasury yield edged higher that day, showing that daily bond moves differed within the broader window.",
+    "source_classification": "wire",
+    "category": "technology",
+    "entities": [
+      "Nvidia",
+      "US technology",
+      "US Treasuries"
+    ],
+    "reviewed_summary": true,
+    "publication_precision": "date",
+    "mechanism_scenario": "technology_expectations"
+  },
+  {
+    "reference": "bls-20260227",
+    "headline": "Producer Price Indexes \u2014 January 2026",
+    "publisher": "US Bureau of Labor Statistics",
+    "published_at": "2026-02-27T13:30:00Z",
+    "url": "https://www.bls.gov/news.release/archives/ppi_02272026.htm",
+    "summary": "US producer prices rose 0.5% in January and 2.9% over the preceding year. The release showed that price pressure remained relevant when investors assessed the interest-rate outlook.",
+    "source_classification": "official_data",
+    "category": "inflation",
+    "entities": [
+      "US producers",
+      "US Treasuries"
+    ],
+    "reviewed_summary": true
+  },
+  {
+    "reference": "ap-20260303",
+    "headline": "Dow drops 400 after trimming an early plunge of 1,200 as oil prices climb even higher",
+    "publisher": "Associated Press",
+    "published_at": "2026-03-03T23:59:59Z",
+    "url": "https://apnews.com/article/75edbda5b8fa3038b47f143cc16855f0",
+    "summary": "The widening war with Iran pushed oil prices higher and shares lower. Treasury yields rose amid inflation concerns, illustrating pressure on stocks and bonds at the same time.",
+    "source_classification": "wire",
+    "category": "geopolitics",
+    "entities": [
+      "Iran",
+      "oil",
+      "US equities",
+      "US Treasuries"
+    ],
+    "reviewed_summary": true,
+    "publication_precision": "date",
+    "mechanism_scenario": "energy_inflation"
+  },
+  {
+    "reference": "wh-20250326",
+    "headline": "Adjusting Imports of Automobiles and Automobile Parts into the United States",
+    "publisher": "White House",
+    "published_at": "2025-03-26T23:59:59Z",
+    "url": "https://www.whitehouse.gov/presidential-actions/2025/03/adjusting-imports-of-automobiles-and-autombile-parts-into-the-united-states/",
+    "summary": "The administration announced a 25% tariff on imported cars and certain parts. The car tariff was scheduled to begin on 3 April; businesses with international supply chains faced a change in future import costs.",
+    "source_classification": "official_policy",
+    "category": "tariffs_trade",
+    "entities": [
+      "US automakers",
+      "US consumers"
+    ],
+    "reviewed_summary": true,
+    "publication_precision": "date"
+  },
+  {
+    "reference": "bea-20250327",
+    "headline": "Gross Domestic Product, Fourth Quarter 2024 \u2014 Third Estimate",
+    "publisher": "US Bureau of Economic Analysis",
+    "published_at": "2025-03-27T12:30:00Z",
+    "url": "https://www.bea.gov/news/2025/gross-domestic-product-4th-quarter-and-year-2024-third-estimate-gdp-industry-and",
+    "summary": "The published estimate put fourth-quarter real GDP growth at a 2.4% annual rate, slower than the third quarter. It described a still-expanding economy before the coming trade-policy changes.",
+    "source_classification": "official_data",
+    "category": "economic_growth",
+    "entities": [
+      "US economy",
+      "US consumers"
+    ],
+    "reviewed_summary": true,
+    "mechanism_scenario": "growth_expansion"
+  },
+  {
+    "reference": "bea-20250328",
+    "headline": "Personal Income and Outlays, February 2025",
+    "publisher": "US Bureau of Economic Analysis",
+    "published_at": "2025-03-28T12:30:00Z",
+    "url": "https://www.bea.gov/news/2025/personal-income-and-outlays-february-2025",
+    "summary": "February PCE prices rose 0.3% over the month; excluding food and energy, prices rose 0.4% and were 2.8% above a year earlier. Investors had to weigh continuing inflation pressure alongside growth and trade-policy risks.",
+    "source_classification": "official_data",
+    "category": "inflation",
+    "entities": [
+      "US consumers",
+      "US Treasuries"
+    ],
+    "reviewed_summary": true
+  }
+]

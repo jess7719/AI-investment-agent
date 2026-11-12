@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="{{ csrf }}">
+  <title>{% block title %}Research & Learning{% endblock %} · Fieldnotes</title>
+  <link rel="stylesheet" href="/static/workspace.css">
+  <script type="module" src="/static/app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="topbar">
+  <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">f.</span> fieldnotes<span class="brand-sub">INVESTMENT RESEARCH</span></a>
+  <nav aria-label="Main navigation"><a href="/">Workspace</a><a href="/company">Company analysis</a><a href="/history">Saved reports</a><a class="profile-link" href="/profile"><span aria-hidden="true">◎</span> Profile</a></nav>
+  <span class="local"><span aria-hidden="true">●</span> LOCAL WORKSPACE</span>
+</header>
+<div id="notice" role="status" aria-live="polite" class="notice" hidden></div>
+{% block body %}{% endblock %}
+<footer>Built for thoughtful research. Data and analysis have limitations. Your notes and profile are stored on this computer.</footer>
+</body></html>

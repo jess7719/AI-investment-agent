@@ -1,0 +1,94 @@
+Outlook for SPCX
+Evidence cutoff: 2026-11-06T17:22:25.249756+00:00
+Market snapshot: 2026-11-02
+
+20-DAY OUTLOOK
+
+Base case
+The current evidence supports a cautious primary scenario for SPCX over twenty trading days if recent market and price conditions continue. Company-specific direction remains unresolved because recent asset evidence is incomplete.
+Why?
+- Broad equities are in a downtrend.
+- Market sentiment is risk-off.
+- Current constraint: Comparable historical benchmark cases had mixed outcomes; they provide market context, not a company forecast.
+What must remain true?
+- The broad market environment does not change materially.
+- New company information does not materially alter the operating picture.
+What would change this view?
+- A sustained change in market breadth and risk appetite develops.
+- Verified company results materially differ from the current evidence.
+
+Bull case
+A stronger near-term outcome for SPCX becomes more plausible if risk appetite improves and company-specific momentum or verified event evidence strengthens.
+Why?
+- Comparable historical benchmark cases had mixed outcomes; they provide market context, not a company forecast.
+- Current constraint: Broad equities are in a downtrend.
+- Current constraint: Market sentiment is risk-off.
+What would need to happen?
+- Market breadth and risk appetite improve.
+- Fresh company evidence supports operating progress.
+What would change this view?
+- Market weakness persists despite attempted recoveries.
+- Verified operating evidence fails to improve.
+
+Bear case
+A weaker near-term outcome for SPCX becomes more plausible if risk appetite deteriorates and company momentum or new factual evidence weakens.
+Why?
+- Broad equities are in a downtrend.
+- Market sentiment is risk-off.
+- Current constraint: Comparable historical benchmark cases had mixed outcomes; they provide market context, not a company forecast.
+What would need to happen?
+- Broad market pressure persists or becomes more severe.
+- Verified company evidence deteriorates or fails to offset market pressure.
+What would change this view?
+- A sustained market recovery develops.
+- Strong verified business progress counters the downside conditions.
+
+60-DAY OUTLOOK
+
+Base case
+Over sixty trading days, the primary scenario for SPCX remains cautious, with business performance and the macro environment carrying greater emphasis. Missing decision-grade fundamentals limit the company-specific conclusion.
+Why?
+- Broad equities are in a downtrend.
+- Market sentiment is risk-off.
+- Current constraint: Comparable historical benchmark cases had mixed outcomes; they provide market context, not a company forecast.
+What must remain true?
+- The macro and sector environment remains broadly consistent.
+- New business data does not materially alter the operating picture.
+What would change this view?
+- Macro conditions shift persistently.
+- A material change in business growth or financial resilience is verified.
+
+Bull case
+A stronger medium-term outcome for SPCX becomes more plausible if verified business progress is sustained and the macro or sector backdrop becomes more supportive.
+Why?
+- Comparable historical benchmark cases had mixed outcomes; they provide market context, not a company forecast.
+- Current constraint: Broad equities are in a downtrend.
+- Current constraint: Market sentiment is risk-off.
+What would need to happen?
+- Financing and sector conditions become more supportive.
+- Verified operating results show sustained progress.
+What would change this view?
+- Macro financing pressure intensifies.
+- Later business evidence fails to sustain operating progress.
+
+Bear case
+A weaker medium-term outcome for SPCX becomes more plausible if operating progress deteriorates or persistent macro pressure weighs on business expectations.
+Why?
+- Broad equities are in a downtrend.
+- Market sentiment is risk-off.
+- Current constraint: Comparable historical benchmark cases had mixed outcomes; they provide market context, not a company forecast.
+What would need to happen?
+- Prolonged macro pressure affects business demand.
+- Verified business results deteriorate.
+What would change this view?
+- Macro and sector conditions improve persistently.
+- Sustained business progress counters the downside conditions.
+
+Evidence gaps:
+- Recent company-specific price evidence is unavailable.
+- Decision-grade current fundamentals are unavailable.
+- No verified upcoming company catalyst is established by the supplied evidence.
+- Verified current company news or filing summaries are unavailable.
+
+These are conditional scenarios, not forecasts or personalised investment advice.
+No OpenAI request was made.

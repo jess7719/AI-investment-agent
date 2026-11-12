@@ -1,0 +1,3 @@
+{% extends "base.html" %}
+{% block title %}Saved reports{% endblock %}
+{% block body %}<main id="main" class="document-page"><p class="eyebrow">YOUR RESEARCH LIBRARY</p><h1>Thinking worth keeping.</h1><p class="lead">Every saved version stays available, along with its private notes.</p>{% for report in reports %}<a class="history-row" href="/reports/{{ report.id }}"><div><strong>{{ report.ticker }} · {{ report.title }}</strong><p>{{ report.created_at }} · {{ report.source }}</p></div><span>Read report ↗</span></a>{% else %}<section class="empty-state"><h2>Your first report starts with a question.</h2><p>Explore an investment and choose the depth you need.</p><a class="button-link" href="/">Open workspace →</a></section>{% endfor %}</main>{% endblock %}

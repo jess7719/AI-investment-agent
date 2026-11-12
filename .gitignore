@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.env
+reports/
+notes/
+profiles/
+.cache/
+test-output*/
+.test-tmp/
+data/portfolio.csv
+data/research/
+data/single-company/

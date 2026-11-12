@@ -1,0 +1,43 @@
+<section class="panel"><h2>Market Environment</h2>
+{% set regime = market_environment.market_regime %}
+{% if regime %}
+<p class="muted small">Saved as of {{ regime.as_of }} · {{ regime.benchmark }} · {{ regime.age_calendar_days }} calendar days old</p>
+<dl>{% for key in ['equity_trend', 'volatility', 'rates', 'risk_sentiment'] %}
+<dt>{{ key|replace('_', ' ')|title }}</dt><dd>{{ regime[key].classification|replace('_', ' ')|title }}</dd>
+{% endfor %}</dl>
+{% else %}<p>Market environment unavailable. Run the regime command to save evidence.</p>{% endif %}
+</section>
+<section class="panel"><h2>Historical Context</h2>
+{% set analogues = market_environment.historical_analogues %}
+{% if analogues %}
+<p>As of {{ analogues.as_of }} · {{ analogues.age_calendar_days }} calendar days old · {{ analogues.mode|replace('_', ' ') }}</p>
+<p>Sample {{ analogues.sample_size }}: {{ analogues.sample_warning }}</p>
+{% for match in analogues.matches %}
+{% set card = match.historical_case %}
+<details class="panel analogue-case">
+<summary>Historical analogue: {{ match.date }} · similarity {{ '%.1f'|format(match.similarity) }}/100 · Read historical case</summary>
+<h3>Historical Case — {{ card.display_date }}</h3>
+<p>Similarity to today: {{ '%.1f'|format(card.similarity_score) }} / 100</p>
+<p>{{ card.scope_notice }}</p>
+<h3>WHAT HAPPENED?</h3>
+{% for development in card.developments %}
+{% if development.facts %}<p>{{ development.facts|join(' ') }}</p>{% else %}<p>Public reports were found, but a verified event explanation is unavailable. See the linked sources.</p>{% endif %}
+{% else %}<p>Verified historical event context is unavailable for this date. Market observations alone do not establish why prices moved.</p>{% endfor %}
+{% if card.macro_conditions %}<p>{{ card.macro_conditions|join(' ') }}</p>{% endif %}
+<h3>WHAT IS SIMILAR TO TODAY?</h3><ul>{% for item in card.similarities %}<li>{{ item }}</li>{% else %}<li>No sufficiently supported similarities are available.</li>{% endfor %}</ul>
+<h3>WHAT HAPPENED NEXT?</h3>
+{% for outcome in card.outcomes %}
+<p>{{ card.benchmark_label }} — {{ outcome.trading_days }} trading days:
+{% if outcome.benchmark_return is not none %}{{ '%+.2f'|format(outcome.benchmark_return) }}%{% else %}unavailable{% endif %}.
+{% if outcome.sufficient_benchmark_data %}Benchmark maximum drawdown:
+{% if outcome.benchmark_maximum_drawdown is not none %}{{ '%+.2f'|format(outcome.benchmark_maximum_drawdown) }}%{% else %}unavailable{% endif %}
+({{ outcome.start_date }} to {{ outcome.end_date }}).{% endif %}</p>
+{% endfor %}
+<p class="muted small">Closing-price returns exclude dividends and are not total returns.</p>
+<h3>Sources</h3><ul>{% for source in card.sources %}<li><a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.headline }}</a> — {{ source.publisher }} ({% if source.publication_precision == 'date' %}{{ source.published_at[:10] }}{% else %}{{ source.published_at }}{% endif %})</li>{% else %}<li>Historical event sources unavailable; market observations remain in the saved analogue evidence.</li>{% endfor %}</ul>
+<p>{{ card.notice }}</p>
+</details>
+{% endfor %}
+{% else %}<p>Historical comparisons unavailable. Run the analogues command to save evidence.</p>{% endif %}
+<p class="muted small">These are historical comparisons, not forecasts. Historical similarity does not imply the same future result.</p>
+</section>

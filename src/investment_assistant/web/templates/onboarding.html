@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}A little about you{% endblock %}
+{% block body %}
+<main id="main" class="onboarding" data-page="onboarding">
+  <div class="intro"><p class="eyebrow">YOUR RESEARCH, AT YOUR PACE</p>
+  <h1>Help us tailor your research <br>and learning experience.</h1>
+  <p>A few questions to make explanations more useful. Every answer is optional. <br>You can change your answers in Profile at any time.</p></div>
+  <div class="onboarding-layout">
+    <aside class="steps-panel"><p class="eyebrow">GETTING STARTED</p><ol id="step-list">
+    {% for step in steps %}<li data-step-index="{{ loop.index0 }}"><span>{{ loop.index }}</span>{{ step.title }}</li>{% endfor %}
+    </ol><div class="privacy-note"><span aria-hidden="true">◇</span><strong>Private by default</strong><p>Stored locally. Before any paid analysis, you can review the personal context that will be sent.</p></div>
+    <a href="/history">Read existing reports →</a></aside>
+    <section class="question-panel" aria-labelledby="step-heading">
+      <div class="step-meta"><span id="step-count">Step 1 of 5</span><span id="save-status" aria-live="polite">Progress saved on this computer</span></div>
+      <progress id="progress" max="5" value="1" aria-label="Questionnaire progress"></progress>
+      <h2 id="step-heading" tabindex="-1"></h2><p id="step-description" class="muted"></p>
+      <form id="questionnaire"><div id="questions"></div>
+      <div class="wizard-actions"><button type="button" class="secondary" id="back">← Back</button><button type="submit" id="next">Next step →</button></div></form>
+      <button type="button" id="skip" class="text-button">Explore without personalisation</button>
+    </section>
+  </div>
+  <script type="application/json" id="onboarding-state">{{ {"steps": steps, "unknown": unknown, "state": shared}|tojson }}</script>
+</main>
+{% endblock %}

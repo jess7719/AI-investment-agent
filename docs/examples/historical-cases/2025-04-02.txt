@@ -1,0 +1,32 @@
+Historical Case — 02 April 2025
+Similarity to today: 86.9 / 100
+Comparison snapshot as of: 2026-11-02
+This is a historical US-market case, not a historical SPCX case.
+
+WHAT HAPPENED?
+The administration announced a 25% tariff on imported cars and certain parts. The car tariff was scheduled to begin on 3 April; businesses with international supply chains faced a change in future import costs.
+The published estimate put fourth-quarter real GDP growth at a 2.4% annual rate, slower than the third quarter. It described a still-expanding economy before the coming trade-policy changes.
+February PCE prices rose 0.3% over the month; excluding food and energy, prices rose 0.4% and were 2.8% above a year earlier. Investors had to weigh continuing inflation pressure alongside growth and trade-policy risks.
+Broad equities were in a downtrend. Treasury yields were falling. Investors were reducing exposure to risky assets. Market price swings were within their usual range.
+
+WHAT IS SIMILAR TO TODAY?
+- Broad equities were in a downtrend in both periods.
+- Treasury yields were falling in both periods.
+- Investors were reducing exposure to risky assets in both periods.
+
+WHAT HAPPENED NEXT?
+S&P 500 (SPY price proxy) — 20 trading days: -1.07%
+Benchmark maximum drawdown: -12.05%; 2025-04-02 to 2025-05-01
+S&P 500 (SPY price proxy) — 60 trading days: +9.45%
+Benchmark maximum drawdown: -12.05%; 2025-04-02 to 2025-06-30
+Returns use closing prices, exclude dividends and are not total returns.
+
+Sources:
+[wh-20250326] White House — Adjusting Imports of Automobiles and Automobile Parts into the United States (2025-03-26)
+https://www.whitehouse.gov/presidential-actions/2025/03/adjusting-imports-of-automobiles-and-autombile-parts-into-the-united-states/
+[bea-20250327] US Bureau of Economic Analysis — Gross Domestic Product, Fourth Quarter 2024 — Third Estimate (2025-03-27T12:30:00+00:00)
+https://www.bea.gov/news/2025/gross-domestic-product-4th-quarter-and-year-2024-third-estimate-gdp-industry-and
+[bea-20250328] US Bureau of Economic Analysis — Personal Income and Outlays, February 2025 (2025-03-28T12:30:00+00:00)
+https://www.bea.gov/news/2025/personal-income-and-outlays-february-2025
+
+Important: This is historical context, not a forecast.

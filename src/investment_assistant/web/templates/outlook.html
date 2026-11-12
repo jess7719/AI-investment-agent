@@ -1,0 +1,21 @@
+<section class="panel" aria-labelledby="outlook-heading">
+<div class="section-heading"><h2 id="outlook-heading">OUTLOOK</h2>
+<button type="button" class="secondary" id="outlook-build">{{ 'Refresh outlook' if outlook else 'Build outlook' }}</button></div>
+<p class="muted small">Conditional market scenarios from the available evidence. No paid AI request.</p>
+{% if outlook %}
+<p class="muted small">Evidence as of {{ outlook.evidence_cutoff }}</p>
+{% if outlook.market_regime_as_of %}<p class="muted small">Market snapshot: {{ outlook.market_regime_as_of }}</p>{% endif %}
+{% for horizon in outlook.horizons %}
+<section aria-label="{{ horizon.label }} outlook"><h3>{{ horizon.label }}</h3>
+{% for scenario in horizon.scenarios %}
+<article class="panel"><h4>{{ scenario.label }}</h4><p>{{ scenario.summary }}</p>
+{% if scenario.why %}<p><strong>Why?</strong></p><ul>{% for reason in scenario.why %}<li>{{ reason }}</li>{% endfor %}</ul>{% endif %}
+<p><strong>{{ 'What must remain true?' if scenario.name == 'base' else 'What would need to happen?' }}</strong></p>
+<ul>{% for item in scenario.conditions %}<li>{{ item }}</li>{% endfor %}</ul>
+<p><strong>What would change this view?</strong></p>
+<ul>{% for item in scenario.invalidation_triggers %}<li>{{ item }}</li>{% endfor %}</ul>
+</article>{% endfor %}</section>{% endfor %}
+{% if outlook.limitations %}<p><strong>Evidence gaps</strong></p><ul>{% for item in outlook.limitations %}<li>{{ item }}</li>{% endfor %}</ul>{% endif %}
+<p>{{ outlook.notice }}</p>
+{% else %}<p>An outlook has not been saved yet. Build one from the available research evidence.</p>{% endif %}
+</section>

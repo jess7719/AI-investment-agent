@@ -1,0 +1,13 @@
+{
+  "machine": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "rows": 7625,
+  "search_samples": 50,
+  "first_search_ms": 50.4,
+  "search_p95_ms": 70.61,
+  "stored_report_samples": 30,
+  "stored_report_p95_ms": 36.23,
+  "percentile_convention": "nearest rank",
+  "search_reader": "persistent query-only SQLite connection, 16 MiB page cache; web-lifetime idle WAL connection",
+  "note": "Local service timings on sourced identities and fixture snapshots, with offline tests running concurrently. These are not browser load or HTTP timings."
+}

@@ -1,0 +1,12 @@
+{
+  "publisher": "Example subscription publication",
+  "headline": "Article headline",
+  "url": "https://publisher.example/article-url",
+  "publication_date": "2026-07-15",
+  "summary": "Write your own short summary here. Do not copy the full article.",
+  "key_facts": [
+    "First fact you verified from your legitimate access",
+    "Second fact, including relevant context"
+  ],
+  "why_it_matters": "Explain how this could affect the company or investment thesis."
+}

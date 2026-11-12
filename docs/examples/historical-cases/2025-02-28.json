@@ -1,0 +1,486 @@
+{
+  "analogue_date": "2025-02-28",
+  "current_as_of": "2026-11-02",
+  "similarity_score": 93.68634049750372,
+  "ticker": "SPCX",
+  "benchmark": "SPY",
+  "benchmark_label": "S&P 500 (SPY price proxy)",
+  "mode": "market_regime_only",
+  "scope_notice": "This is a historical US-market case, not a historical SPCX case.",
+  "regime": {
+    "equity_trend": "downtrend",
+    "volatility": "normal",
+    "rates": "falling",
+    "monetary_policy": "unknown",
+    "inflation": "unknown",
+    "growth": "unknown",
+    "risk_sentiment": "risk_off"
+  },
+  "context_before_date": {
+    "analogue_date": "2025-02-28",
+    "market": "US",
+    "evidence_version": "historical-context-v1",
+    "window_days": 7,
+    "main_events": [
+      {
+        "event_date": "2025-02-28",
+        "category": "economic_growth",
+        "source_ref": "bea-20250228",
+        "affected_markets": [
+          "US consumers",
+          "US Treasuries"
+        ],
+        "evidence": {
+          "kind": "FACT",
+          "text": "January consumer spending declined 0.2% in nominal terms while the PCE price index rose 0.3% over the month. This release gave investors both a spending signal and an inflation update.",
+          "evidence_refs": [
+            "bea-20250228"
+          ]
+        },
+        "known_by_analogue_date": true,
+        "possible_market_mechanism": {
+          "kind": "INTERPRETATION",
+          "category": "economic_growth",
+          "steps": [
+            "Weaker consumer spending",
+            "concerns about future company sales",
+            "investors may seek safer Treasury bonds",
+            "bond prices rise and yields fall",
+            "shares can weaken despite lower yields"
+          ],
+          "explanation": "Possible explanation: Weaker household spending can make investors worry about company sales. Some may move money into safer government bonds, pushing bond prices up and yields down. Stocks can still struggle because lower yields do not remove the growth concern.",
+          "evidence_refs": [
+            "bea-20250228"
+          ],
+          "certainty": "possible",
+          "scenario": "weak_spending"
+        }
+      },
+      {
+        "event_date": "2025-02-25",
+        "category": "tariffs_trade",
+        "source_ref": "ap-20250225",
+        "affected_markets": [
+          "US consumers",
+          "US equities",
+          "US Treasuries"
+        ],
+        "evidence": {
+          "kind": "FACT",
+          "text": "Shares weakened as concerns about tariffs and inflation weighed on consumers. Treasury yields also fell as demand for safer assets increased.",
+          "evidence_refs": [
+            "ap-20250225"
+          ]
+        },
+        "known_by_analogue_date": true,
+        "possible_market_mechanism": {
+          "kind": "INTERPRETATION",
+          "category": "tariffs_trade",
+          "steps": [
+            "Trade-policy changes",
+            "uncertain import costs and supply chains",
+            "less predictable business profits and growth",
+            "investors reassess equity risk"
+          ],
+          "explanation": "Possible explanation: Tariffs can raise import costs and make future profits harder to predict. Businesses may delay investment while investors reassess growth and equity risk. Demand for safer bonds may rise, although inflation concerns can pull yields the other way.",
+          "evidence_refs": [
+            "ap-20250225"
+          ],
+          "certainty": "possible",
+          "scenario": null
+        }
+      },
+      {
+        "event_date": "2025-02-27",
+        "category": "technology",
+        "source_ref": "ap-20250227",
+        "affected_markets": [
+          "Nvidia",
+          "US technology",
+          "US Treasuries"
+        ],
+        "evidence": {
+          "kind": "FACT",
+          "text": "Nvidia fell 8.5% after its results as enthusiasm for artificial-intelligence shares weakened. The 10-year Treasury yield edged higher that day, showing that daily bond moves differed within the broader window.",
+          "evidence_refs": [
+            "ap-20250227"
+          ]
+        },
+        "known_by_analogue_date": true,
+        "possible_market_mechanism": {
+          "kind": "INTERPRETATION",
+          "category": "technology",
+          "steps": [
+            "Technology results disappoint high expectations",
+            "expected returns are reassessed",
+            "investors reduce exposure to growth shares",
+            "large technology weights pull on indexes"
+          ],
+          "explanation": "Possible explanation: Investors compare results with expectations already built into share prices. Even strong sales can disappoint a market expecting more. Selling in large technology companies can then pull the broader index lower.",
+          "evidence_refs": [
+            "ap-20250227"
+          ],
+          "certainty": "possible",
+          "scenario": "technology_expectations"
+        }
+      }
+    ],
+    "event_clusters": [
+      {
+        "category": "economic_growth",
+        "title": "Growth and consumer spending",
+        "facts": [
+          {
+            "kind": "FACT",
+            "text": "January consumer spending declined 0.2% in nominal terms while the PCE price index rose 0.3% over the month. This release gave investors both a spending signal and an inflation update.",
+            "evidence_refs": [
+              "bea-20250228"
+            ]
+          }
+        ],
+        "evidence_refs": [
+          "bea-20250228"
+        ],
+        "interpretation": {
+          "kind": "INTERPRETATION",
+          "category": "economic_growth",
+          "steps": [
+            "Weaker consumer spending",
+            "concerns about future company sales",
+            "investors may seek safer Treasury bonds",
+            "bond prices rise and yields fall",
+            "shares can weaken despite lower yields"
+          ],
+          "explanation": "Possible explanation: Weaker household spending can make investors worry about company sales. Some may move money into safer government bonds, pushing bond prices up and yields down. Stocks can still struggle because lower yields do not remove the growth concern.",
+          "evidence_refs": [
+            "bea-20250228"
+          ],
+          "certainty": "possible",
+          "scenario": "weak_spending"
+        }
+      },
+      {
+        "category": "tariffs_trade",
+        "title": "Tariffs and trade policy",
+        "facts": [
+          {
+            "kind": "FACT",
+            "text": "Shares weakened as concerns about tariffs and inflation weighed on consumers. Treasury yields also fell as demand for safer assets increased.",
+            "evidence_refs": [
+              "ap-20250225"
+            ]
+          }
+        ],
+        "evidence_refs": [
+          "ap-20250225"
+        ],
+        "interpretation": {
+          "kind": "INTERPRETATION",
+          "category": "tariffs_trade",
+          "steps": [
+            "Trade-policy changes",
+            "uncertain import costs and supply chains",
+            "less predictable business profits and growth",
+            "investors reassess equity risk"
+          ],
+          "explanation": "Possible explanation: Tariffs can raise import costs and make future profits harder to predict. Businesses may delay investment while investors reassess growth and equity risk. Demand for safer bonds may rise, although inflation concerns can pull yields the other way.",
+          "evidence_refs": [
+            "ap-20250225"
+          ],
+          "certainty": "possible",
+          "scenario": null
+        }
+      },
+      {
+        "category": "technology",
+        "title": "Technology shares and AI",
+        "facts": [
+          {
+            "kind": "FACT",
+            "text": "Nvidia fell 8.5% after its results as enthusiasm for artificial-intelligence shares weakened. The 10-year Treasury yield edged higher that day, showing that daily bond moves differed within the broader window.",
+            "evidence_refs": [
+              "ap-20250227"
+            ]
+          }
+        ],
+        "evidence_refs": [
+          "ap-20250227"
+        ],
+        "interpretation": {
+          "kind": "INTERPRETATION",
+          "category": "technology",
+          "steps": [
+            "Technology results disappoint high expectations",
+            "expected returns are reassessed",
+            "investors reduce exposure to growth shares",
+            "large technology weights pull on indexes"
+          ],
+          "explanation": "Possible explanation: Investors compare results with expectations already built into share prices. Even strong sales can disappoint a market expecting more. Selling in large technology companies can then pull the broader index lower.",
+          "evidence_refs": [
+            "ap-20250227"
+          ],
+          "certainty": "possible",
+          "scenario": "technology_expectations"
+        }
+      }
+    ],
+    "evidence_refs": [
+      {
+        "reference": "bea-20250228",
+        "headline": "Personal Income and Outlays, January 2025",
+        "publisher": "US Bureau of Economic Analysis",
+        "published_at": "2025-02-28T13:30:00Z",
+        "url": "https://www.bea.gov/news/2025/personal-income-and-outlays-january-2025",
+        "summary": "January consumer spending declined 0.2% in nominal terms while the PCE price index rose 0.3% over the month. This release gave investors both a spending signal and an inflation update.",
+        "source_classification": "official_data",
+        "entities": [
+          "US consumers",
+          "US Treasuries"
+        ],
+        "category": "economic_growth",
+        "reviewed_summary": true,
+        "publication_precision": "timestamp",
+        "mechanism_scenario": "weak_spending"
+      },
+      {
+        "reference": "ap-20250225",
+        "headline": "How major US stock indexes fared Tuesday, 2/25/2025",
+        "publisher": "Associated Press",
+        "published_at": "2025-02-25T23:59:59Z",
+        "url": "https://apnews.com/article/662baaa23f22ff6e74b8a35dd716e3bc",
+        "summary": "Shares weakened as concerns about tariffs and inflation weighed on consumers. Treasury yields also fell as demand for safer assets increased.",
+        "source_classification": "wire",
+        "entities": [
+          "US consumers",
+          "US equities",
+          "US Treasuries"
+        ],
+        "category": "tariffs_trade",
+        "reviewed_summary": true,
+        "publication_precision": "date",
+        "mechanism_scenario": null
+      },
+      {
+        "reference": "ap-20250227",
+        "headline": "Wall Street falls sharply as Nvidia tumbles 8.5% and AI mania falters",
+        "publisher": "Associated Press",
+        "published_at": "2025-02-27T23:59:59Z",
+        "url": "https://apnews.com/article/91a42e60248e389f1650bd744e6d9a2e",
+        "summary": "Nvidia fell 8.5% after its results as enthusiasm for artificial-intelligence shares weakened. The 10-year Treasury yield edged higher that day, showing that daily bond moves differed within the broader window.",
+        "source_classification": "wire",
+        "entities": [
+          "Nvidia",
+          "US technology",
+          "US Treasuries"
+        ],
+        "category": "technology",
+        "reviewed_summary": true,
+        "publication_precision": "date",
+        "mechanism_scenario": "technology_expectations"
+      }
+    ],
+    "retrieval_status": "reviewed public metadata only; historical archive coverage is partial",
+    "evidence_quality": "reviewed summaries with linked public metadata",
+    "evidence_completeness": "partial",
+    "source_count": 3
+  },
+  "macro_conditions": [
+    {
+      "kind": "FACT",
+      "text": "Broad equities were in a downtrend.",
+      "evidence_refs": []
+    },
+    {
+      "kind": "FACT",
+      "text": "Treasury yields were falling.",
+      "evidence_refs": []
+    },
+    {
+      "kind": "FACT",
+      "text": "Investors were reducing exposure to risky assets.",
+      "evidence_refs": []
+    },
+    {
+      "kind": "FACT",
+      "text": "Market price swings were within their usual range.",
+      "evidence_refs": []
+    }
+  ],
+  "market_mechanisms": [
+    {
+      "kind": "INTERPRETATION",
+      "category": "economic_growth",
+      "steps": [
+        "Weaker consumer spending",
+        "concerns about future company sales",
+        "investors may seek safer Treasury bonds",
+        "bond prices rise and yields fall",
+        "shares can weaken despite lower yields"
+      ],
+      "explanation": "Possible explanation: Weaker household spending can make investors worry about company sales. Some may move money into safer government bonds, pushing bond prices up and yields down. Stocks can still struggle because lower yields do not remove the growth concern.",
+      "evidence_refs": [
+        "bea-20250228"
+      ],
+      "certainty": "possible",
+      "scenario": "weak_spending"
+    },
+    {
+      "kind": "INTERPRETATION",
+      "category": "tariffs_trade",
+      "steps": [
+        "Trade-policy changes",
+        "uncertain import costs and supply chains",
+        "less predictable business profits and growth",
+        "investors reassess equity risk"
+      ],
+      "explanation": "Possible explanation: Tariffs can raise import costs and make future profits harder to predict. Businesses may delay investment while investors reassess growth and equity risk. Demand for safer bonds may rise, although inflation concerns can pull yields the other way.",
+      "evidence_refs": [
+        "ap-20250225"
+      ],
+      "certainty": "possible",
+      "scenario": null
+    },
+    {
+      "kind": "INTERPRETATION",
+      "category": "technology",
+      "steps": [
+        "Technology results disappoint high expectations",
+        "expected returns are reassessed",
+        "investors reduce exposure to growth shares",
+        "large technology weights pull on indexes"
+      ],
+      "explanation": "Possible explanation: Investors compare results with expectations already built into share prices. Even strong sales can disappoint a market expecting more. Selling in large technology companies can then pull the broader index lower.",
+      "evidence_refs": [
+        "ap-20250227"
+      ],
+      "certainty": "possible",
+      "scenario": "technology_expectations"
+    }
+  ],
+  "historical_outcomes": {
+    "20d": {
+      "kind": "HISTORICAL OUTCOME",
+      "trading_days": 20,
+      "start_date": "2025-02-28",
+      "end_date": "2025-03-28",
+      "asset_return": null,
+      "benchmark_return": -6.482887341558252,
+      "benchmark_excess_return": null,
+      "maximum_drawdown": null,
+      "benchmark_maximum_drawdown": -7.196474181680723,
+      "sufficient_asset_data": false,
+      "sufficient_benchmark_data": true
+    },
+    "60d": {
+      "kind": "HISTORICAL OUTCOME",
+      "trading_days": 60,
+      "start_date": "2025-02-28",
+      "end_date": "2025-05-27",
+      "asset_return": null,
+      "benchmark_return": -0.5099411456238823,
+      "benchmark_excess_return": null,
+      "maximum_drawdown": null,
+      "benchmark_maximum_drawdown": -16.442825893460178,
+      "sufficient_asset_data": false,
+      "sufficient_benchmark_data": true
+    }
+  },
+  "similarities_to_today": [
+    {
+      "kind": "COMPARISON",
+      "text": "Broad equities are in a downtrend in both snapshots.",
+      "evidence_refs": []
+    },
+    {
+      "kind": "COMPARISON",
+      "text": "Treasury yields are falling in both snapshots.",
+      "evidence_refs": []
+    },
+    {
+      "kind": "COMPARISON",
+      "text": "Investors are reducing exposure to risky assets in both snapshots.",
+      "evidence_refs": []
+    }
+  ],
+  "internal_differences_from_today": [],
+  "lessons": [
+    {
+      "kind": "LESSON",
+      "text": "Falling Treasury yields do not always help shares. If investors worry about growth, they may buy safer bonds while reducing stock exposure.",
+      "evidence_refs": [
+        "bea-20250228"
+      ]
+    },
+    {
+      "kind": "LESSON",
+      "text": "A tariff can raise a company's costs before it changes reported profits. Policy uncertainty can therefore move share prices ahead of earnings.",
+      "evidence_refs": [
+        "ap-20250225"
+      ]
+    },
+    {
+      "kind": "LESSON",
+      "text": "Strong sales alone do not guarantee a rising share price. Investors compare results with the expectations already built into the price.",
+      "evidence_refs": [
+        "ap-20250227"
+      ]
+    }
+  ],
+  "evidence_refs": [
+    {
+      "reference": "bea-20250228",
+      "headline": "Personal Income and Outlays, January 2025",
+      "publisher": "US Bureau of Economic Analysis",
+      "published_at": "2025-02-28T13:30:00Z",
+      "url": "https://www.bea.gov/news/2025/personal-income-and-outlays-january-2025",
+      "summary": "January consumer spending declined 0.2% in nominal terms while the PCE price index rose 0.3% over the month. This release gave investors both a spending signal and an inflation update.",
+      "source_classification": "official_data",
+      "entities": [
+        "US consumers",
+        "US Treasuries"
+      ],
+      "category": "economic_growth",
+      "reviewed_summary": true,
+      "publication_precision": "timestamp",
+      "mechanism_scenario": "weak_spending"
+    },
+    {
+      "reference": "ap-20250225",
+      "headline": "How major US stock indexes fared Tuesday, 2/25/2025",
+      "publisher": "Associated Press",
+      "published_at": "2025-02-25T23:59:59Z",
+      "url": "https://apnews.com/article/662baaa23f22ff6e74b8a35dd716e3bc",
+      "summary": "Shares weakened as concerns about tariffs and inflation weighed on consumers. Treasury yields also fell as demand for safer assets increased.",
+      "source_classification": "wire",
+      "entities": [
+        "US consumers",
+        "US equities",
+        "US Treasuries"
+      ],
+      "category": "tariffs_trade",
+      "reviewed_summary": true,
+      "publication_precision": "date",
+      "mechanism_scenario": null
+    },
+    {
+      "reference": "ap-20250227",
+      "headline": "Wall Street falls sharply as Nvidia tumbles 8.5% and AI mania falters",
+      "publisher": "Associated Press",
+      "published_at": "2025-02-27T23:59:59Z",
+      "url": "https://apnews.com/article/91a42e60248e389f1650bd744e6d9a2e",
+      "summary": "Nvidia fell 8.5% after its results as enthusiasm for artificial-intelligence shares weakened. The 10-year Treasury yield edged higher that day, showing that daily bond moves differed within the broader window.",
+      "source_classification": "wire",
+      "entities": [
+        "Nvidia",
+        "US technology",
+        "US Treasuries"
+      ],
+      "category": "technology",
+      "reviewed_summary": true,
+      "publication_precision": "date",
+      "mechanism_scenario": "technology_expectations"
+    }
+  ],
+  "notice": "This is historical context, not a forecast.",
+  "current_evidence_refs": []
+}
