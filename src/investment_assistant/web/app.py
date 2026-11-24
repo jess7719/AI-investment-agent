@@ -90,7 +90,16 @@ def create_app(root: Path = PROJECT_ROOT, *, research_factory=None, reasoner_fac
     app = FastAPI(title="Research & Learning", docs_url=None, redoc_url=None,
                   openapi_url=None, lifespan=lifespan)
     app.state.store, app.state.workflow, app.state.csrf = store, workflow, csrf
-    app.add_middleware(TrustedHostMiddleware, allowed_hosts=["localhost", "127.0.0.1", "[::1]", "testserver"])
+    app.add_middleware(
+        TrustedHostMiddleware,
+        allowed_hosts=[
+            "localhost",
+            "127.0.0.1",
+            "[::1]",
+            "testserver",
+            "ai-investment-agent-p2br.onrender.com",
+        ],
+    )
 
     @app.middleware("http")
     async def privacy(request: Request, call_next):
